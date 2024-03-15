@@ -12,7 +12,7 @@ public class Sensor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mobile);
     }
-    public void startDiagnostics(View view) {
+    public void startSensorActivity(View view) {
         Intent intent = new Intent(this,Sensor.class);
         startActivity(intent);
     }

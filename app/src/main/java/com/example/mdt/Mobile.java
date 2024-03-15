@@ -12,7 +12,7 @@ public class Mobile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mobile);
     }
-    public void startDiagnostics(View view) {
+    public void startMobileActivity(View view) {
         Intent intent = new Intent(this,Mobile.class);
         startActivity(intent);
     }

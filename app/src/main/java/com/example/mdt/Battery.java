@@ -10,9 +10,9 @@ public class  Battery extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mobile);
+        setContentView(R.layout.activity_battery);
     }
-    public void startDiagnostics(View view) {
+    public void startBatteryActivity(View view) {
         Intent intent = new Intent(this,Battery.class);
         startActivity(intent);
     }

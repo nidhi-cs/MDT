@@ -10,9 +10,9 @@ public class Camera extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mobile);
+        setContentView(R.layout.activity_camera);
     }
-    public void startDiagnostics(View view) {
+    public void startCameraActivity(View view) {
         Intent intent = new Intent(this,Camera.class);
         startActivity(intent);
     }

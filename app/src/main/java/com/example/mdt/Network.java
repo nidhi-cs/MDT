@@ -10,9 +10,9 @@ public class Network extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mobile);
+        setContentView(R.layout.activity_sensor);
     }
-    public void startDiagnostics(View view) {
+    public void startNetworkActivity(View view) {
         Intent intent = new Intent(this,Network.class);
         startActivity(intent);
     }

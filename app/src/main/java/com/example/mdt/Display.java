@@ -10,9 +10,9 @@ public class Display extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mobile);
+        setContentView(R.layout.activity_display);
     }
-    public void startDiagnostics(View view) {
+    public void startDisplayActivity(View view) {
         Intent intent = new Intent(this,Display.class);
         startActivity(intent);
     }
