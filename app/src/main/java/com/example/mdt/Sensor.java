@@ -10,7 +10,7 @@ public class Sensor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mobile);
+        setContentView(R.layout.activity_sensor);
     }
     public void startSensorActivity(View view) {
         Intent intent = new Intent(this,Sensor.class);
