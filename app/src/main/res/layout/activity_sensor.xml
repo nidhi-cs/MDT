@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
-    tools:context=".Sensor">
+    tools:context=".SensorActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/SensorAppBar"
@@ -35,13 +35,17 @@
                 android:layout_height="48dp"
                 android:src="@drawable/ic_launcher_background"
                 android:contentDescription="Device Icon" />
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SENSORS"
+                android:id="@+id/txtValues"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,7 +76,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="top"
-            tools:context=".BatteryInfo">
+            tools:context=".SensorActivityInfo">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,7 +86,7 @@
                 android:textStyle="bold"
                 android:padding="16dp" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Proximity Sensor"

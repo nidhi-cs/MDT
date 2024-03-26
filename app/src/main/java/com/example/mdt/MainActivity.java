@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button cameraInfoBtn;
     private Button networkInfoBtn;
     private Button sensorInfoBtn;
+    private Button displayInfoBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         cameraInfoBtn = findViewById(R.id.cameraInfoBtn);
         networkInfoBtn = findViewById(R.id.networkInfoBtn);
         sensorInfoBtn = findViewById(R.id.sensorInfoBtn);
+        displayInfoBtn = findViewById(R.id.displayInfoBtn);
 
         // Set OnClickListener for mobileInfoBtn
         mobileInfoBtn.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
                 startSensorActivity();
             }
         });
+
+        displayInfoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startDisplayActivity();
+            }
+
+        });
     }
 
     private void startMobileActivity() {
@@ -88,7 +98,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startSensorActivity() {
-        Intent intent = new Intent(this, Sensor.class);
+        Intent intent = new Intent(this, SensorActivity.class);
         startActivity(intent);
     }
-}
+        private void startDisplayActivity () {
+            Intent intent = new Intent(this, Display.class);
+            startActivity(intent);
+        }
+    }
+
