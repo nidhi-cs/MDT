@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SENSORS"
-                android:id="@+id/txtValues"
+
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
@@ -78,40 +78,33 @@
             android:gravity="top"
             tools:context=".SensorActivityInfo">
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ambient Light Sensor"
+                android:text="Proximity Sensor"
+                android:id="@+id/txtValues"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Proximity Sensor"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="16dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="E compass"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="16dp" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Accelerometer"
+                android:id="@+id/txtAccelerometerValues"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gyroscope"
+                android:id="@+id/txtGyroscopeValues"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
@@ -123,6 +116,13 @@
                 android:gravity="center"
                 android:padding="16dp">
 
+
+                <Button
+                    android:id="@+id/btnStop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stop"
+                    android:layout_marginTop="16dp"/>
 
 
 
